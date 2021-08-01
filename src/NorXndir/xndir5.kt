@@ -1,0 +1,18 @@
+package src.NorXndir
+import java.util.*
+
+fun main(args: Array<String>) {
+    val reader = Scanner(System.`in`)
+    print("Enter a number: ")
+    val num = reader.nextInt()
+
+    for (i in 1..num){
+        for (j in 8 downTo i){
+            print(" ")
+        }
+        for (k in 1..i){
+            print(" *")
+        }
+        println()
+    }
+}
